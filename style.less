@@ -1,0 +1,230 @@
+@leaguespeedblue: #3f87c2;
+@deeperblue: #3974a6;
+@sidebarblue: #273038;
+@navhighlight: #181d22;
+@mainfont: 'Asap', sans-serif; //import this
+@bodygray: #eeeef2;
+@subheadergray: #dde1ee;
+@lightgrayborder: #f5f5f8;
+@myPaddingLeft: 20px;
+@barHeight: 60px;
+
+.vertCenter() {
+  display: flex;
+  align-items: center;
+}
+
+body, html {
+  font-family: @mainfont;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  background-color: #0D1E29;
+
+  .content {
+    max-width: 1400px;
+    margin: 0 auto;
+    height: 100%;
+    box-sizing: border-box;
+
+    .button {
+      font-size: 20px;
+      padding: 5px 15px;
+      background-color: @deeperblue;
+      color: white;
+      border: 2px solid white;
+      border-radius: 15px;
+      &:hover {
+        background-color: @leaguespeedblue;
+      }
+      &:active {
+        position: relative;
+        top: 1px;
+      }
+      &:focus {
+        outline: 0;
+      }
+    }
+
+    .aLine {
+      background-color: #999999;
+      height: 3px;
+      width: 100%;
+      border-radius: 3px;
+    }
+
+    .header {
+      box-sizing: border-box;
+      .vertCenter();
+      width: 100%;
+      height: 60px;
+      background-color: @leaguespeedblue;
+      .icon {
+        .vertCenter();
+        justify-content: center;
+        font-size: 30px;
+        color: white;
+        background-color: @deeperblue;
+        min-width: 60px;
+        height: 100%;
+      }
+      .otherHeaderPart {
+        width: ~"calc(100% - 60px)";
+        display: flex;
+        justify-content: space-between;
+        .mySelector {
+          font-size: 15px;
+        }
+        padding-left: @myPaddingLeft;
+        span {
+          color: white;
+          margin-left: 10px;
+        }
+        i {
+          color: white;
+          font-size: 20px;
+          padding-right: @myPaddingLeft;
+        }
+      }
+    }
+
+    .bottomArea {
+      display: flex;
+      height: ~"calc(100% - 60px)";
+      width: 100%;
+      box-sizing: border-box;
+
+      .sideNav {
+        box-sizing: border-box;
+        text-align: center;
+        background-color: @sidebarblue;
+        min-width: 60px;
+        height: 100%;
+        color: white;
+        i {
+          margin-top: 20px;
+          display: block;
+        }
+      }
+
+      .mainSection {
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        background-color: @bodygray;
+        padding: 0 @myPaddingLeft;
+
+        .buttonDiv {
+          box-sizing: border-box;
+          .vertCenter();
+          height: @barHeight;
+          width: 100%;
+          .extraMarginRight {
+            margin-right: 20px;
+          }
+        }
+
+        .builderDiv {
+          box-sizing: border-box;
+          display: flex;
+          height: ~"calc(100% - 60px)";
+          .randomHeader {
+            font-size: 20px;
+          }
+          .assignmentDiv {
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+            padding: 10px;
+            width: 30%;
+            height: 100%;
+            border: 2px solid black;
+            .divisionSelector {
+              margin: 10px 0;
+              font-size: 20px;
+              width: 100%;
+            }
+            .pcButtons {
+              .vertCenter();
+              justify-content: space-between;
+              width: 100%;
+              height: @barHeight;
+            }
+            .peopleDivs {
+              font-size: 20px;
+              height: @barHeight;
+              .vertCenter();
+              justify-content: space-between;
+              width: 100%;
+              .person {
+
+              }
+              .approve {
+                .green {
+                  color: green;
+                }
+                .red {
+                  color: red;
+                }
+              }
+            }
+          }
+
+          .teamDiv {
+            box-sizing: border-box;
+            width: 80%;
+            height: 100%;
+            padding-left: @myPaddingLeft;
+
+            .teamHeader {
+              box-sizing: border-box;
+              padding: 0 10px 0 @myPaddingLeft;
+              .vertCenter();
+              justify-content: space-between;
+              width: 100%;
+              background-color: @subheadergray;
+              height: @barHeight;
+              .headerStuff {
+                .vertCenter();
+                font-size: 20px;
+                div {
+                  padding-right: 30px;
+                }
+              }
+            }
+
+            .team {
+              box-sizing: border-box;
+              height: @barHeight;
+              display: flex;
+              .vertCenter();
+              padding-left: @myPaddingLeft;
+              padding-right: 10px;
+              justify-content: space-between;
+              width: 100%;
+              .teamInfo {
+                .vertCenter();
+                width: 50%;
+                font-size: 20px;
+                i {
+                  font-size: 25px;
+                  padding-right: 10px;
+                }
+                .infoItems {
+                  width: 33%;
+                }
+              }
+              .editButtons {
+                font-size: 30px;
+                i {
+                  padding-left: 10px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

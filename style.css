@@ -1,0 +1,242 @@
+body,
+html {
+  font-family: 'Asap', sans-serif;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  background-color: #0D1E29;
+}
+body .content,
+html .content {
+  max-width: 1400px;
+  margin: 0 auto;
+  height: 100%;
+  box-sizing: border-box;
+}
+body .content .button,
+html .content .button {
+  font-size: 20px;
+  padding: 5px 15px;
+  background-color: #3974a6;
+  color: white;
+  border: 2px solid white;
+  border-radius: 15px;
+}
+body .content .button:hover,
+html .content .button:hover {
+  background-color: #3f87c2;
+}
+body .content .button:active,
+html .content .button:active {
+  position: relative;
+  top: 1px;
+}
+body .content .button:focus,
+html .content .button:focus {
+  outline: 0;
+}
+body .content .aLine,
+html .content .aLine {
+  background-color: #999999;
+  height: 3px;
+  width: 100%;
+  border-radius: 3px;
+}
+body .content .header,
+html .content .header {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  background-color: #3f87c2;
+}
+body .content .header .icon,
+html .content .header .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  color: white;
+  background-color: #3974a6;
+  min-width: 60px;
+  height: 100%;
+}
+body .content .header .otherHeaderPart,
+html .content .header .otherHeaderPart {
+  width: calc(100% - 60px);
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+}
+body .content .header .otherHeaderPart .mySelector,
+html .content .header .otherHeaderPart .mySelector {
+  font-size: 15px;
+}
+body .content .header .otherHeaderPart span,
+html .content .header .otherHeaderPart span {
+  color: white;
+  margin-left: 10px;
+}
+body .content .header .otherHeaderPart i,
+html .content .header .otherHeaderPart i {
+  color: white;
+  font-size: 20px;
+  padding-right: 20px;
+}
+body .content .bottomArea,
+html .content .bottomArea {
+  display: flex;
+  height: calc(100% - 60px);
+  width: 100%;
+  box-sizing: border-box;
+}
+body .content .bottomArea .sideNav,
+html .content .bottomArea .sideNav {
+  box-sizing: border-box;
+  text-align: center;
+  background-color: #273038;
+  min-width: 60px;
+  height: 100%;
+  color: white;
+}
+body .content .bottomArea .sideNav i,
+html .content .bottomArea .sideNav i {
+  margin-top: 20px;
+  display: block;
+}
+body .content .bottomArea .mainSection,
+html .content .bottomArea .mainSection {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  background-color: #eeeef2;
+  padding: 0 20px;
+}
+body .content .bottomArea .mainSection .buttonDiv,
+html .content .bottomArea .mainSection .buttonDiv {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+}
+body .content .bottomArea .mainSection .buttonDiv .extraMarginRight,
+html .content .bottomArea .mainSection .buttonDiv .extraMarginRight {
+  margin-right: 20px;
+}
+body .content .bottomArea .mainSection .builderDiv,
+html .content .bottomArea .mainSection .builderDiv {
+  box-sizing: border-box;
+  display: flex;
+  height: calc(100% - 60px);
+}
+body .content .bottomArea .mainSection .builderDiv .randomHeader,
+html .content .bottomArea .mainSection .builderDiv .randomHeader {
+  font-size: 20px;
+}
+body .content .bottomArea .mainSection .builderDiv .assignmentDiv,
+html .content .bottomArea .mainSection .builderDiv .assignmentDiv {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 10px;
+  width: 30%;
+  height: 100%;
+  border: 2px solid black;
+}
+body .content .bottomArea .mainSection .builderDiv .assignmentDiv .divisionSelector,
+html .content .bottomArea .mainSection .builderDiv .assignmentDiv .divisionSelector {
+  margin: 10px 0;
+  font-size: 20px;
+  width: 100%;
+}
+body .content .bottomArea .mainSection .builderDiv .assignmentDiv .pcButtons,
+html .content .bottomArea .mainSection .builderDiv .assignmentDiv .pcButtons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 60px;
+}
+body .content .bottomArea .mainSection .builderDiv .assignmentDiv .peopleDivs,
+html .content .bottomArea .mainSection .builderDiv .assignmentDiv .peopleDivs {
+  font-size: 20px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+body .content .bottomArea .mainSection .builderDiv .assignmentDiv .peopleDivs .approve .green,
+html .content .bottomArea .mainSection .builderDiv .assignmentDiv .peopleDivs .approve .green {
+  color: green;
+}
+body .content .bottomArea .mainSection .builderDiv .assignmentDiv .peopleDivs .approve .red,
+html .content .bottomArea .mainSection .builderDiv .assignmentDiv .peopleDivs .approve .red {
+  color: red;
+}
+body .content .bottomArea .mainSection .builderDiv .teamDiv,
+html .content .bottomArea .mainSection .builderDiv .teamDiv {
+  box-sizing: border-box;
+  width: 80%;
+  height: 100%;
+  padding-left: 20px;
+}
+body .content .bottomArea .mainSection .builderDiv .teamDiv .teamHeader,
+html .content .bottomArea .mainSection .builderDiv .teamDiv .teamHeader {
+  box-sizing: border-box;
+  padding: 0 10px 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #dde1ee;
+  height: 60px;
+}
+body .content .bottomArea .mainSection .builderDiv .teamDiv .teamHeader .headerStuff,
+html .content .bottomArea .mainSection .builderDiv .teamDiv .teamHeader .headerStuff {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+}
+body .content .bottomArea .mainSection .builderDiv .teamDiv .teamHeader .headerStuff div,
+html .content .bottomArea .mainSection .builderDiv .teamDiv .teamHeader .headerStuff div {
+  padding-right: 30px;
+}
+body .content .bottomArea .mainSection .builderDiv .teamDiv .team,
+html .content .bottomArea .mainSection .builderDiv .teamDiv .team {
+  box-sizing: border-box;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 10px;
+  justify-content: space-between;
+  width: 100%;
+}
+body .content .bottomArea .mainSection .builderDiv .teamDiv .team .teamInfo,
+html .content .bottomArea .mainSection .builderDiv .teamDiv .team .teamInfo {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  font-size: 20px;
+}
+body .content .bottomArea .mainSection .builderDiv .teamDiv .team .teamInfo i,
+html .content .bottomArea .mainSection .builderDiv .teamDiv .team .teamInfo i {
+  font-size: 25px;
+  padding-right: 10px;
+}
+body .content .bottomArea .mainSection .builderDiv .teamDiv .team .teamInfo .infoItems,
+html .content .bottomArea .mainSection .builderDiv .teamDiv .team .teamInfo .infoItems {
+  width: 33%;
+}
+body .content .bottomArea .mainSection .builderDiv .teamDiv .team .editButtons,
+html .content .bottomArea .mainSection .builderDiv .teamDiv .team .editButtons {
+  font-size: 30px;
+}
+body .content .bottomArea .mainSection .builderDiv .teamDiv .team .editButtons i,
+html .content .bottomArea .mainSection .builderDiv .teamDiv .team .editButtons i {
+  padding-left: 10px;
+}
