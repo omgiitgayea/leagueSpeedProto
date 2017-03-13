@@ -41,7 +41,6 @@ html .content .aLine {
   background-color: #999999;
   height: 3px;
   width: 100%;
-  border-radius: 3px;
 }
 body .content .header,
 html .content .header {
@@ -120,6 +119,7 @@ html .content .bottomArea .mainSection .buttonDiv {
   display: flex;
   align-items: center;
   height: 60px;
+  margin-bottom: 20px;
   width: 100%;
 }
 body .content .bottomArea .mainSection .buttonDiv .extraMarginRight,
@@ -130,7 +130,7 @@ body .content .bottomArea .mainSection .builderDiv,
 html .content .bottomArea .mainSection .builderDiv {
   box-sizing: border-box;
   display: flex;
-  height: calc(100% - 60px);
+  height: calc(100% - 80px);
 }
 body .content .bottomArea .mainSection .builderDiv .randomHeader,
 html .content .bottomArea .mainSection .builderDiv .randomHeader {
@@ -145,6 +145,7 @@ html .content .bottomArea .mainSection .builderDiv .assignmentDiv {
   width: 30%;
   height: 100%;
   border: 2px solid black;
+  background-color: white;
 }
 body .content .bottomArea .mainSection .builderDiv .assignmentDiv .divisionSelector,
 html .content .bottomArea .mainSection .builderDiv .assignmentDiv .divisionSelector {
@@ -162,6 +163,9 @@ html .content .bottomArea .mainSection .builderDiv .assignmentDiv .pcButtons {
 }
 body .content .bottomArea .mainSection .builderDiv .assignmentDiv .peopleDivs,
 html .content .bottomArea .mainSection .builderDiv .assignmentDiv .peopleDivs {
+  box-sizing: border-box;
+  border: 1px solid #DDDDDD;
+  padding: 5px;
   font-size: 20px;
   height: 60px;
   display: flex;
@@ -182,7 +186,7 @@ html .content .bottomArea .mainSection .builderDiv .teamDiv {
   box-sizing: border-box;
   width: 80%;
   height: 100%;
-  padding-left: 20px;
+  margin-left: 20px;
 }
 body .content .bottomArea .mainSection .builderDiv .teamDiv .teamHeader,
 html .content .bottomArea .mainSection .builderDiv .teamDiv .teamHeader {
@@ -205,38 +209,56 @@ body .content .bottomArea .mainSection .builderDiv .teamDiv .teamHeader .headerS
 html .content .bottomArea .mainSection .builderDiv .teamDiv .teamHeader .headerStuff div {
   padding-right: 30px;
 }
-body .content .bottomArea .mainSection .builderDiv .teamDiv .team,
-html .content .bottomArea .mainSection .builderDiv .teamDiv .team {
+body .content .bottomArea .mainSection .builderDiv .teamDiv .teamsList,
+html .content .bottomArea .mainSection .builderDiv .teamDiv .teamsList {
+  border: 1px solid #DDDDDD;
+}
+body .content .bottomArea .mainSection .builderDiv .teamDiv .teamsList .team,
+html .content .bottomArea .mainSection .builderDiv .teamDiv .teamsList .team {
   box-sizing: border-box;
+  padding: 0 20px;
+  width: 100%;
+}
+body .content .bottomArea .mainSection .builderDiv .teamDiv .teamsList .team .infoRoster,
+html .content .bottomArea .mainSection .builderDiv .teamDiv .teamsList .team .infoRoster {
   height: 60px;
   display: flex;
   align-items: center;
-  padding-left: 20px;
-  padding-right: 10px;
-  justify-content: space-between;
   width: 100%;
+  justify-content: space-between;
 }
-body .content .bottomArea .mainSection .builderDiv .teamDiv .team .teamInfo,
-html .content .bottomArea .mainSection .builderDiv .teamDiv .team .teamInfo {
+body .content .bottomArea .mainSection .builderDiv .teamDiv .teamsList .team .infoRoster .teamInfo,
+html .content .bottomArea .mainSection .builderDiv .teamDiv .teamsList .team .infoRoster .teamInfo {
   display: flex;
   align-items: center;
   width: 50%;
   font-size: 20px;
 }
-body .content .bottomArea .mainSection .builderDiv .teamDiv .team .teamInfo i,
-html .content .bottomArea .mainSection .builderDiv .teamDiv .team .teamInfo i {
+body .content .bottomArea .mainSection .builderDiv .teamDiv .teamsList .team .infoRoster .teamInfo i,
+html .content .bottomArea .mainSection .builderDiv .teamDiv .teamsList .team .infoRoster .teamInfo i {
   font-size: 25px;
   padding-right: 10px;
 }
-body .content .bottomArea .mainSection .builderDiv .teamDiv .team .teamInfo .infoItems,
-html .content .bottomArea .mainSection .builderDiv .teamDiv .team .teamInfo .infoItems {
+body .content .bottomArea .mainSection .builderDiv .teamDiv .teamsList .team .infoRoster .teamInfo .infoItems,
+html .content .bottomArea .mainSection .builderDiv .teamDiv .teamsList .team .infoRoster .teamInfo .infoItems {
   width: 33%;
 }
-body .content .bottomArea .mainSection .builderDiv .teamDiv .team .editButtons,
-html .content .bottomArea .mainSection .builderDiv .teamDiv .team .editButtons {
+body .content .bottomArea .mainSection .builderDiv .teamDiv .teamsList .team .infoRoster .teamInfo .rotNinety,
+html .content .bottomArea .mainSection .builderDiv .teamDiv .teamsList .team .infoRoster .teamInfo .rotNinety {
+  transform: rotate(90deg);
+}
+body .content .bottomArea .mainSection .builderDiv .teamDiv .teamsList .team .infoRoster .editButtons,
+html .content .bottomArea .mainSection .builderDiv .teamDiv .teamsList .team .infoRoster .editButtons {
   font-size: 30px;
 }
-body .content .bottomArea .mainSection .builderDiv .teamDiv .team .editButtons i,
-html .content .bottomArea .mainSection .builderDiv .teamDiv .team .editButtons i {
+body .content .bottomArea .mainSection .builderDiv .teamDiv .teamsList .team .infoRoster .editButtons i,
+html .content .bottomArea .mainSection .builderDiv .teamDiv .teamsList .team .infoRoster .editButtons i {
   padding-left: 10px;
+}
+body .content .bottomArea .mainSection .builderDiv .teamDiv .teamsList .team .teamRoster,
+html .content .bottomArea .mainSection .builderDiv .teamDiv .teamsList .team .teamRoster {
+  box-sizing: border-box;
+  border-top: 1px solid #DDDDDD;
+  margin-bottom: 10px;
+  padding: 5px;
 }
